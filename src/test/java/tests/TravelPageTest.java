@@ -36,11 +36,12 @@ public class TravelPageTest extends Base {
         driver.get("https://www.flipkart.com");
     }
 
-    @Test
-    public void TravelPage() {
+  @Test
+    public void TravelPage() throws InterruptedException {
         logger.info("Starting the TravelPage test");
 
         logger.info("Clicking on the Travel link");
+        Thread.sleep(3000);
         driver.findElement(By.xpath("//a[@aria-label='Travel']")).click();
 
         logger.info("Verifying if the Travel page element is displayed");
