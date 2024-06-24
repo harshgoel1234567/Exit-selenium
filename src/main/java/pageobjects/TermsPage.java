@@ -12,7 +12,7 @@ public class TermsPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(xpath = "//strong[contains(text(),'Lending Partners of Scapic Innovations Private Lim')]")
+    @FindBy(xpath = "//strong[normalize-space()='Flipkart Terms of Use']")
     private WebElement termsHeader;
 
     public TermsPage(WebDriver driver, WebDriverWait wait) {
